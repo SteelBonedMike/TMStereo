@@ -192,30 +192,34 @@
 
       $(init);
     </script>
+      
+      
   </head>
   <body style="background-color:gray">
 
-<div id="lSlide">
-<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)"/>
-<span id="range">0</span>      
-</div>
 
-<div id="hunk" style="width:520px; margin-left:auto; margin-right:auto; align:center;">
+
+<div id="hunk" style="width:560px; margin-left:auto; margin-right:auto; align:center;">
+    
+    <div id="lSlide" style="width:20px; float:left; -webkit-transform:rotate(90deg);">
+        <input type="range" min="0" max="7" value="0" step="1" />
+    </div>
 
       <div id="player1" style="width:260px;float:left"></div>
 
       <div id="player2" style="width:260px;float:left"></div>
+    
+    <div id="rSlide" style="width:20px; float:right; -webkit-transform:rotate(90deg);">
+        <input type="range" min="0" max="7" value="0" step="1" />
+    </div>
 
 </div>
-
+      
       <div id="leftBurton"> <input type="button" value="Click me!" onclick="lLayerchange()"> </div>
-
+      
       <div id="rightBurton"> <input type="button" value="Click me!" onclick="rLayerchange()"> </div>
 
-<div id="rSlide">
-<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
-<span id="range">0</span>
-</div>
+
 
 
 
