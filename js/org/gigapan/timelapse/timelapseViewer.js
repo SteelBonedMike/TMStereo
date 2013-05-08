@@ -116,8 +116,8 @@ function handlePluginVideoTagOverride() {
 
 function setViewportSize(newWidth, newHeight, timelapse) {
   // TODO: hackity-hack
-  newWidth = 260;
-  newHeight = 260;
+  newWidth = 480;
+  newHeight = 480;
 
   timelapse.updateDimensions(newWidth, newHeight);
 
